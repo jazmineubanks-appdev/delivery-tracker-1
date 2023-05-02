@@ -9,6 +9,7 @@ Rails.application.routes.draw do
           
   # READ
   get("/deliveries", { :controller => "deliveries", :action => "index" })
+  get("/", { :controller => "deliveries", :action => "index" })
   
   get("/deliveries/:path_id", { :controller => "deliveries", :action => "show" })
   
